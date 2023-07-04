@@ -19,7 +19,7 @@ $(function () {
 
   // initialize the local storage with empty json
   if (!localStorage.getItem("localMemos"))
-    localStorage.setItem("localmemos", "{}");
+    localStorage.setItem("localMemos", JSON.stringify(localMemos));
 
   // event listner if one of the save buttons's have been clicked
   $(".saveBtn").click(function (e) {
